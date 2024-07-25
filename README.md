@@ -4,26 +4,32 @@ title: Animal example
 ---
 classDiagram
     note "From Duck till Zebra"
-    Animal <|-- Duck
+    Animal <|-- Canard
     note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
-    Animal <|-- Fish
-    Animal <|-- Zebra
+    Animal <|-- Poisson
+    Animal <|-- Lion
+    Animal <|-- Zebre
     Animal : +int age
     Animal : +String gender
     Animal: +isMammal()
     Animal: +mate()
-    class Duck{
+    class Canard{
         +String beakColor
         +swim()
         +quack()
     }
-    class Fish{
+    class Poisson{
         -int sizeInFeet
         -canEat()
     }
-    class Zebra{
+    class Zebre{
         +bool is_wild
         +run()
     }
+    class Lion {
+        +strong()
+        +run()
+    }
+
 
 ```
