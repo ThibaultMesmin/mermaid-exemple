@@ -5,7 +5,6 @@ title: Animal example
 classDiagram
     note "From Duck till Zebra"
     Animal <|-- Canard
-    note for Canard.. Canard
     note for Canard "can fly\ncan swim\ncan dive\ncan help in debugging"
     Animal <|-- Poisson
     Animal <|-- Lion
